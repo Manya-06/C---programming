@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+struct book {
+    char title[50];
+    char author[50];
+    float price;
+};
+
+int main() {
+    struct book b1 = {"The Great Gatsby", "F. Scott Fitzgerald", 200};
+    struct book b2 = {"Pride and Prejudice", "Jane Austen", 250};
+    struct book b3 = {"War and Peace", "Leo Tolstoy", 150};
+
+    printf("title: %s\n", b1.title);
+    printf("author: %s\n", b1.author);
+    printf("price: %2.f\n", b1.price);
+
+printf("title: %s\n", b2.title);
+    printf("author: %s\n", b2.author);
+    printf("price: %.2f\n", b2.price);
+
+    // Printing book 3
+    printf("title: %s\n", b3.title);
+    printf("author: %s\n", b3.author);
+    printf("price: %.2f\n", b3.price);
+
+return 0;
+}
